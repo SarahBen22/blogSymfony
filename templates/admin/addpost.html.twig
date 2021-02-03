@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Ajouter un article{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper">
+    <h1>Ajouter un article<h1>
+
+    <section>
+        <form action="#" method="POST">
+            <p>
+                <label for="post-title">Titre du post</label>
+                <input type="text" id="post-title" name="post-title"></input>
+            </p>
+            <p>
+                <label for="post-content">Contenu de l'article</label>
+                <textarea type="text" id="post-content" name="post-content"></textarea>
+            </p>
+            <p>
+                <button type="submit">Ajouter</button>
+            </p>
+        </form>
+    </section>
+
+</div>
+{% endblock %}
